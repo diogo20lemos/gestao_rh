@@ -9,16 +9,34 @@
     {{ form|bootstrap }}
     <button type="submit" >Salvar</button>
 </form>
+<br>
 
 <br>
+<h2>Documentos</h2>
+<ul>
+{% for documento in object.documento_set.all %}
+    <li>
+        <a href="{{documento.arquivo.url}}" > {{documento}} </a>
+    </li>
+{% endfor %}
+</ul>
 <a href="{% url 'create_documento' object.id %}" class="btn btn-success" >
     Adiiconar documento
 </a>
 
 
-{% for documento in object.documento_set.all %}
-
-    <a href="{{documento.arquivo.url}}" > {{documento}} </a>
+<br>
+<h2>Banco de Hotas</h2>
+<ul>
+{% for registro_hora in object.registrohoraextra_set.all %}
+    <li>
+        <a href="{% url 'update_hora_extra' registro_hora.id %}" >
+            {{registro_hora.motivo}}  | {{ registro_hora.horas }}<br>
+        </a>
+    </li>
 {% endfor %}
+</ul>
+
+<h3>Total de horas extras: {{ object.total_horas_extra }}</h3>
 
 {% endblock %}

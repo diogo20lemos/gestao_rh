@@ -14,3 +14,5 @@ urlpatterns = [
             FuncionarioDelete.as_view(), name='delete_funcionario'),
 
  ]
+
+
