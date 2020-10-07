@@ -10,6 +10,7 @@ from .views import (
     ExportarExcel
 )
 
+
 urlpatterns = [
     path('', HoraExtraList.as_view(), name='list_hora_extra'),
     path('novo/', HoraExtraNovo.as_view(), name='create_registro_hora_extra'),
