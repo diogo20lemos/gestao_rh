@@ -1,9 +1,9 @@
 from django.urls import path, include
-from .views import home
+from .views import home, celery
 
 
 urlpatterns = [
     path('', home, name='home'),
-    # path('accounts/login/', home, name='logout'),
+    path('celery/', celery, name='celery'),
 
 ]
