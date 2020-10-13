@@ -4,7 +4,7 @@ from celery import shared_task
 from django.core.mail import send_mail
 from apps.funcionarios.models import Funcionario
 
-from demoapp.models import Widget
+# from demoapp.models import Widget
 
 
 @shared_task
