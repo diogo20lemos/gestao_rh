@@ -3,3 +3,9 @@
 venv
 *.pyc
 gestao_rh/__pycache__/
+uwsgi.ini
+uwngi_params
+*.bak
+*.dat
+*.pid
+*.dir
