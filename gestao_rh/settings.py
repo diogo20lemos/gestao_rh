@@ -117,7 +117,7 @@ DATABASE_ROUTERS = ['gestao_rh.DBRoutes.DBRoutes']
 LANGUAGES = (
     ('en', _('English')),
     ('pt', _('Portuguese')),
-    ('en', _('Spanish')),
+    ('es', _('Spanish')),
 )
 
 LOCALE_PATHS = (

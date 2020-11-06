@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-05 17:46-0300\n"
+"POT-Creation-Date: 2020-11-06 15:11-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,9 +22,27 @@ msgstr ""
 msgid "One of three columns"
 msgstr "Una de tres colunas"
 
-#: .\apps\core\templates\core\index.html:10
-msgid "Ola"
+#: .\apps\core\templates\core\index.html:8
+msgid ""
+"\n"
+"            My big block\n"
+"            of text\n"
+"            must got tight here\n"
+"        "
+msgstr ""
+"\n"
+"            Mi gran bloque\n"
+"            de texto\n"
+"            debe ir justo aqui\n"
+"        "
+
+#: .\apps\core\templates\core\index.html:15
+msgid "Hi"
 msgstr "Hola"
+
+#: .\apps\funcionarios\views.py:25
+msgid "Employee report"
+msgstr "Informe de empleados"
 
 #: .\gestao_rh\settings.py:118
 msgid "English"
@@ -37,3 +55,6 @@ msgstr ""
 #: .\gestao_rh\settings.py:120
 msgid "Spanish"
 msgstr "Espanhol"
+
+#~ msgid "Ola"
+#~ msgstr "Hola"
