@@ -22,7 +22,7 @@ from rest_framework import routers
 from apps.core import views
 from apps.funcionarios.api.views import FuncionarioViewSet
 from apps.registro_hora_extra.api.views import RegistroHoraExtraViewSet
-from django.conf.urls.i18n import i18n_patterns
+# from django.conf.urls.i18n import i18n_patterns
 
 router = routers.DefaultRouter()
 router.register(r'users', views.UserViewSet)
